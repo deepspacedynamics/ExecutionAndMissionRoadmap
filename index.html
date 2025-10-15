@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Space Dynamics - Slide 8: Momentum and Roadmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #0b0f1a;
+  padding: 30px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.timeline-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.timeline-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1E3A8A;
+  margin-bottom: 8px;
+}
+
+.timeline-subtitle {
+  font-size: 24px;
+  color: #6b7280;
+}
+
+#timeline-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #ffffff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="timeline-section">
+    <div class="timeline-header">
+      <h2 class="timeline-title">Deep Space Dynamics | Execution and Mission Roadmap</h2>
+      <p class="timeline-subtitle">Q4 2025 to 2033</p>
+    </div>
+
+    <svg id="timeline-svg" viewBox="0 0 1800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deep Space Dynamics execution and mission roadmap from 2025 to 2033">
+      <defs>
+        <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+          <feOffset dx="0" dy="2" result="offsetblur"/>
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.2"/>
+          </feComponentTransfer>
+          <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <title>Execution and Mission Roadmap</title>
+      <desc>Timeline showing Deep Space Dynamics milestones from Q4 2025 through 2033, including funding rounds, engineering milestones, launches, and AI development</desc>
+
+      <!-- Legend -->
+      <g id="legend" transform="translate(1420, 30)">
+        <text x="0" y="0" font-size="15" font-weight="600" fill="#0b0f1a">Legend</text>
+        
+        <g transform="translate(0, 22)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="#0A84FF"/>
+          <text x="22" y="11" font-size="13" fill="#6b7280">Engineering</text>
+        </g>
+        
+        <g transform="translate(0, 44)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="#10B981"/>
+          <text x="22" y="11" font-size="13" fill="#6b7280">Funding</text>
+        </g>
+        
+        <g transform="translate(0, 66)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="#E76F51"/>
+          <text x="22" y="11" font-size="13" fill="#6b7280">Launch/Science</text>
+        </g>
+        
+        <g transform="translate(0, 88)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="none" stroke="#1E3A8A" stroke-width="2"/>
+          <text x="22" y="11" font-size="13" fill="#6b7280">AI/Automation</text>
+        </g>
+      </g>
+
+      <!-- Baseline and year markers -->
+      <g id="baseline" transform="translate(100, 650)">
+        <line x1="0" y1="0" x2="1600" y2="0" stroke="#1E3A8A" stroke-width="3"/>
+        
+        <!-- Vertical gridlines and year labels -->
+        <g id="year-2025" transform="translate(0, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2025</text>
+        </g>
+        
+        <g id="year-2026" transform="translate(200, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2026</text>
+        </g>
+        
+        <g id="year-2027" transform="translate(400, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2027</text>
+        </g>
+        
+        <g id="year-2028" transform="translate(600, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2028</text>
+        </g>
+        
+        <g id="year-2029" transform="translate(800, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2029</text>
+        </g>
+        
+        <g id="year-2030" transform="translate(1000, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2030</text>
+        </g>
+        
+        <g id="year-2031" transform="translate(1200, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2031</text>
+        </g>
+        
+        <g id="year-2032" transform="translate(1400, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2032</text>
+        </g>
+        
+        <g id="year-2033" transform="translate(1600, 0)">
+          <line x1="0" y1="-550" x2="0" y2="0" stroke="#e5e7eb" stroke-width="1"/>
+          <circle cx="0" cy="0" r="8" fill="#1E3A8A"/>
+          <text x="0" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a">2033</text>
+        </g>
+      </g>
+
+      <!-- Milestones -->
+      
+      <!-- Q4 2025 Funding: Pre-seed -->
+      <g id="milestone-preseed" filter="url(#cardShadow)">
+        <line x1="150" y1="470" x2="150" y2="650" stroke="#10B981" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="50" y="340" width="200" height="120" rx="8" fill="#ffffff" stroke="#10B981" stroke-width="2"/>
+        <text x="150" y="362" text-anchor="middle" font-size="16" font-weight="600" fill="#10B981">💰 Pre-Seed Close</text>
+        <text x="60" y="384" font-size="12" fill="#0b0f1a">Funding: $1.2M pre-seed</text>
+        <text x="60" y="402" font-size="12" fill="#6b7280">Lock Neuman A 3U</text>
+        <text x="60" y="418" font-size="12" fill="#6b7280">Build and test 8 units</text>
+        <text x="60" y="434" font-size="12" fill="#6b7280">Launch provider contract</text>
+        <text x="60" y="452" font-size="11" font-style="italic" fill="#1E3A8A">→ 8 spacecraft ready Q2 2026</text>
+      </g>
+
+      <!-- Q1-Q3 2026 Launch: Initial deployment -->
+      <g id="milestone-launch2026" filter="url(#cardShadow)">
+        <line x1="300" y1="350" x2="300" y2="650" stroke="#E76F51" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="200" y="200" width="200" height="140" rx="8" fill="#ffffff" stroke="#E76F51" stroke-width="2"/>
+        <text x="300" y="222" text-anchor="middle" font-size="16" font-weight="600" fill="#E76F51">🚀 Initial Eight Deployment</text>
+        <text x="210" y="244" font-size="12" fill="#0b0f1a">Aug 2026 rideshare launch</text>
+        <text x="210" y="262" font-size="12" fill="#6b7280">6 to 9 month transit</text>
+        <text x="210" y="278" font-size="12" fill="#6b7280">Solar wind mapping</text>
+        <text x="210" y="294" font-size="12" fill="#6b7280">Deep space PNT tests</text>
+        <text x="210" y="310" font-size="12" fill="#6b7280">Laser relay and DSN backup</text>
+        <text x="210" y="328" font-size="11" font-style="italic" fill="#1E3A8A">→ Network operational mid 2027</text>
+      </g>
+
+      <!-- 2027-2028 Seed phase -->
+      <g id="milestone-seed" filter="url(#cardShadow)">
+        <line x1="550" y1="470" x2="550" y2="650" stroke="#10B981" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="420" y="340" width="260" height="120" rx="8" fill="#ffffff" stroke="#10B981" stroke-width="2"/>
+        <text x="550" y="362" text-anchor="middle" font-size="16" font-weight="600" fill="#10B981">💵 Seed Phase</text>
+        <text x="430" y="384" font-size="12" fill="#0b0f1a">Funding: $3M to $6M seed</text>
+        <text x="430" y="402" font-size="12" fill="#6b7280">Austin integration facility</text>
+        <text x="430" y="418" font-size="12" fill="#6b7280">42 Neuman B spacecraft</text>
+        <text x="430" y="434" font-size="12" fill="#6b7280">L4/L5 coverage expansion</text>
+        <text x="430" y="452" font-size="11" font-style="italic" fill="#1E3A8A">→ 50 unit ISSN by 2028</text>
+      </g>
+
+      <!-- 2027-2028 AI v1.0 -->
+      <g id="milestone-ai1" filter="url(#cardShadow)">
+        <line x1="550" y1="180" x2="550" y2="650" stroke="#1E3A8A" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="450" y="80" width="200" height="90" rx="8" fill="#ffffff" stroke="#1E3A8A" stroke-width="2"/>
+        <text x="550" y="102" text-anchor="middle" font-size="16" font-weight="600" fill="#1E3A8A">🤖 AI Mission Control v1.0</text>
+        <text x="460" y="124" font-size="12" fill="#6b7280">Autonomous operations</text>
+        <text x="460" y="140" font-size="12" fill="#6b7280">SDA subscriptions</text>
+        <text x="460" y="156" font-size="12" fill="#6b7280">Network management</text>
+      </g>
+
+      <!-- 2029-2031 Series A -->
+      <g id="milestone-seriesA" filter="url(#cardShadow)">
+        <line x1="1050" y1="480" x2="1050" y2="650" stroke="#10B981" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="880" y="330" width="340" height="140" rx="8" fill="#ffffff" stroke="#10B981" stroke-width="2"/>
+        <text x="1050" y="352" text-anchor="middle" font-size="16" font-weight="600" fill="#10B981">🏦 Series A Scale Up</text>
+        <text x="890" y="374" font-size="12" fill="#0b0f1a">Funding: $40M to $65M Series A</text>
+        <text x="890" y="392" font-size="12" fill="#6b7280">Automated line: 200 units/year</text>
+        <text x="890" y="408" font-size="12" fill="#6b7280">Mercury nodes added</text>
+        <text x="890" y="424" font-size="12" fill="#6b7280">Main belt prospecting swarms</text>
+        <text x="890" y="440" font-size="12" fill="#6b7280">Outer system sensor network</text>
+        <text x="890" y="456" font-size="11" font-style="italic" fill="#1E3A8A">→ 1,000 active spacecraft</text>
+      </g>
+
+      <!-- 2029-2031 Science missions -->
+      <g id="milestone-science" filter="url(#cardShadow)">
+        <line x1="1050" y1="270" x2="1050" y2="650" stroke="#E76F51" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="930" y="160" width="240" height="100" rx="8" fill="#ffffff" stroke="#E76F51" stroke-width="2"/>
+        <text x="1050" y="182" text-anchor="middle" font-size="16" font-weight="600" fill="#E76F51">🔭 Planetary Science</text>
+        <text x="940" y="204" font-size="12" fill="#6b7280">Jupiter and Saturn missions</text>
+        <text x="940" y="220" font-size="12" fill="#6b7280">Uranus and Neptune flybys</text>
+        <text x="940" y="236" font-size="12" fill="#6b7280">Main belt mineral mapping</text>
+      </g>
+
+      <!-- 2029-2031 AI v2.0 -->
+      <g id="milestone-ai2" filter="url(#cardShadow)">
+        <line x1="1050" y1="90" x2="1050" y2="650" stroke="#1E3A8A" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="950" y="20" width="200" height="60" rx="8" fill="#ffffff" stroke="#1E3A8A" stroke-width="2"/>
+        <text x="1050" y="40" text-anchor="middle" font-size="16" font-weight="600" fill="#1E3A8A">🧠 AI Mission Control v2.0</text>
+        <text x="960" y="58" font-size="12" fill="#6b7280">Multi-network autonomy</text>
+        <text x="960" y="72" font-size="12" fill="#6b7280">Predictive maintenance</text>
+      </g>
+
+      <!-- 2032-2033 Maturity -->
+      <g id="milestone-maturity" filter="url(#cardShadow)">
+        <line x1="1550" y1="350" x2="1550" y2="650" stroke="#E76F51" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="1410" y="200" width="280" height="140" rx="8" fill="#ffffff" stroke="#E76F51" stroke-width="2"/>
+        <text x="1550" y="222" text-anchor="middle" font-size="16" font-weight="600" fill="#E76F51">🛡️ Maturity Phase</text>
+        <text x="1420" y="244" font-size="12" fill="#0b0f1a">Planetary Defense Grid</text>
+        <text x="1420" y="262" font-size="12" fill="#6b7280">Link NASA, USSF, allies</text>
+        <text x="1420" y="278" font-size="12" fill="#6b7280">Interstellar pathfinder</text>
+        <text x="1420" y="294" font-size="12" fill="#6b7280">Kuiper Belt exploration</text>
+        <text x="1420" y="310" font-size="12" fill="#6b7280">Investor liquidity program</text>
+        <text x="1420" y="328" font-size="11" font-style="italic" fill="#1E3A8A">→ Definitive provider</text>
+      </g>
+
+      <!-- 2032-2033 AI v3.0 -->
+      <g id="milestone-ai3" filter="url(#cardShadow)">
+        <line x1="1550" y1="140" x2="1550" y2="650" stroke="#1E3A8A" stroke-width="2" stroke-dasharray="4,4"/>
+        <rect x="1450" y="70" width="200" height="60" rx="8" fill="#ffffff" stroke="#1E3A8A" stroke-width="2"/>
+        <text x="1550" y="90" text-anchor="middle" font-size="16" font-weight="600" fill="#1E3A8A">⚡ AI Mission Control v3.0</text>
+        <text x="1460" y="108" font-size="12" fill="#6b7280">Fully autonomous fleet</text>
+        <text x="1460" y="122" font-size="12" fill="#6b7280">Self-healing systems</text>
+      </g>
+
+    </svg>
+  </div>
+</div>
+
+</body>
+</html>
